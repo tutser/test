@@ -1,0 +1,207 @@
+@font-face {
+  font-family: 'Poiret One';
+  src: url("../fonts/PoiretOne-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto_condensed_tutser';
+  src: url("../fonts/RobotoCondensed-Regular.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto_lite_tutser';
+  src: url("../fonts/Roboto/Roboto-Light.ttf");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto_thin_tutser';
+  src: url("../fonts/Roboto/Roboto-Thin.ttf");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'AnonymousPro-regular_tutser';
+  src: url("../fonts/Anonymous_Pro/AnonymousPro-Regular.ttf");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SourceSansPro-Light';
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Light.ttf");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Free_Mono';
+  src: url("../fonts/freefont/FreeMono.ttf");
+  font-weight: 200;
+  font-style: normal;
+}
+body {
+  font-family: SourceSansPro-Light;
+  background-color: #15151c;
+}
+body a {
+  text-decoration: none;
+}
+.wrapper {
+  overflow-x: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 1366px;
+  height: 100vh;
+  width: 100%;
+}
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 0px 5px 5px 5px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ede5ce;
+  padding: 10px 20px;
+}
+.content p {
+  display: block;
+  padding: 10px 0px;
+  line-height: 1.6em;
+  font-size: 1.5em;
+}
+.wrap {
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-top: -30px;
+}
+.wrap .first_p {
+  display: block;
+  max-width: 800px;
+}
+.p_white {
+  color: #ef7f1a;
+}
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+  margin: 20px 20px 0px 20px;
+}
+.logo_blog {
+  height: 60px;
+  font-family: 'Poiret One';
+  font-size: 2.5em;
+  line-height: 50px;
+  padding: 0 20px 0 20px;
+}
+.logo_tutser {
+  color: #ef7f1a;
+}
+.logo_net {
+  color: #008dd2;
+}
+.header_menu {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  text-align: right;
+}
+.header_menu ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 10px;
+  font-size: 1.2em;
+  font-weight: 200;
+}
+.header_menu ul li a {
+  color: #ede5ce;
+  text-transform: uppercase;
+  outline: none;
+}
+.header_menu ul li a:hover {
+  color: #ef7f1a;
+}
+.header_menu ul li a:active {
+  color: #008dd2;
+}
+.mark a {
+  border: 1px dashed #ede5ce;
+  padding: 5px;
+  border-radius: 5px;
+}
+.footer_menu {
+  text-align: center;
+  font-size: 0.8em;
+  margin: 0px 15px 15px 15px;
+  border-radius: 5px;
+  display: none;
+}
+.footer_menu li {
+  margin: 0px;
+}
+.copyright {
+  text-align: center;
+  margin: 0px 20px 20px 20px;
+  color: #ede5ce;
+  font-size: 1.1em;
+}
+@media only screen and (max-width: 767px) {
+  .logo_blog {
+    margin: 0 auto;
+  }
+  .header_menu {
+    display: none;
+  }
+  .footer_menu {
+    display: block;
+  }
+  .content {
+    min-width: 100px;
+    font-size: 0.7em;
+    margin-bottom: 0px;
+    padding: 0px 5px;
+  }
+  .wrap {
+    margin-top: 0;
+  }
+}
